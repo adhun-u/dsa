@@ -1,13 +1,13 @@
 package main
 
 import (
-	arraysandhashes "dsa/arrays_and_hashes"
+	array "dsa/arrays_and_hashes"
 	"fmt"
 )
 
 func main() {
 
-	output := arraysandhashes.GroupAnagrams([]string{"act", "pots", "tops", "cat", "stop", "hat"})
+	output := array.TopKFrequent([]int{1, 2, 2, 3, 3, 3}, 2)
 
 	fmt.Println("Value : ", output)
 
