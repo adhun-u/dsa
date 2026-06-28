@@ -7,8 +7,10 @@ import (
 
 func main() {
 
-	output := array.TopKFrequent([]int{1, 2, 2, 3, 3, 3}, 2)
+	str := []string{}
 
-	fmt.Println("Value : ", output)
-
+	s := array.Solution{}
+	encoded := s.Encode(str)
+	fmt.Println("Out of encoded : ", encoded)
+	fmt.Println("Out of decoded : ", len(s.Decode(encoded)))
 }
