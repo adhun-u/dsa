@@ -7,10 +7,7 @@ import (
 
 func main() {
 
-	str := []string{}
+	out := array.ProductExceptSelf([]int{-1, -2, -3})
 
-	s := array.Solution{}
-	encoded := s.Encode(str)
-	fmt.Println("Out of encoded : ", encoded)
-	fmt.Println("Out of decoded : ", len(s.Decode(encoded)))
+	fmt.Println("Out : ", out)
 }

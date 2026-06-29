@@ -1,7 +1,6 @@
 package arraysandhashes
 
 import (
-	"fmt"
 	"strconv"
 	"strings"
 )
@@ -11,7 +10,6 @@ type Solution struct{}
 func (s *Solution) Encode(strs []string) string {
 
 	if len(strs) == 1 && strs[0] == "" {
-		fmt.Println("True ")
 		return "101109112116121"
 	}
 
