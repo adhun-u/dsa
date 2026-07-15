@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-	out := stack.EvalRPN([]string{"100", "0", "*"})
+	out := stack.DailyTemperatures([]int{30, 30})
 	fmt.Println("Out : ", out)
 }
