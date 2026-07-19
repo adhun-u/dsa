@@ -6,20 +6,7 @@ import (
 )
 
 func main() {
-	// out := stack.DailyTemperatures([]int{30, 30})
-	// fmt.Println("Out : ", out)
+	out := stack.AsteroidCollision([]int{1, -2, -2, -2})
+	fmt.Println("Out : ", out)
 
-	s := stack.StockConstructor()
-	span := s.Next(100)
-	fmt.Println("Span : ", span)
-	span = s.Next(120)
-	fmt.Println("Span : ", span)
-	span = s.Next(100)
-	fmt.Println("Span : ", span)
-	span = s.Next(110)
-	fmt.Println("Span : ", span)
-	span = s.Next(120)
-	fmt.Println("Span : ", span)
-	span = s.Next(50)
-	fmt.Println("Span : ", span)
 }
