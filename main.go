@@ -6,7 +6,6 @@ import (
 )
 
 func main() {
-	out := stack.AsteroidCollision([]int{1, -2, -2, -2})
+	out := stack.CarFleet(12, []int{10, 8, 0, 5, 3}, []int{2, 4, 1, 1, 3})
 	fmt.Println("Out : ", out)
-
 }
