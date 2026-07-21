@@ -5,32 +5,30 @@ import (
 )
 
 func CarFleet(target int, position []int, speed []int) int {
-	posMap := map[int]int{}
+
+	speedMap := map[int]int{}
 	stack := []int{}
 
 	for i := range position {
-		pos := position[i]
-		sp := speed[i]
-		posMap[pos] = sp
+		speedMap[position[i]] = speed[i]
 	}
 
 	slices.Sort(position)
 
 	for i := len(position) - 1; i >= 0; i-- {
-		pos := position[i]
-		stack = append(stack, pos)
+		stack = append(stack, position[i])
 
 		if len(stack) >= 2 {
-			last := stack[len(stack)-2]
-			secLast := stack[len(stack)-1]
-			lastT := float32((target - last) / posMap[last])
-			secLastT := float32((target - secLast) / posMap[secLast])
-			if secLastT <= lastT {
+			last := stack[len(stack)-1]
+			secLast := stack[len(stack)-2]
+			lastTime := (float32(target) - float32(last)) / float32(speedMap[last])
+			secLastTime := (float32(target) - float32(secLast)) / float32(speedMap[secLast])
+
+			if lastTime <= secLastTime {
 				stack = stack[:len(stack)-2]
-				stack = append(stack, last)
+				stack = append(stack, secLast)
 			}
 		}
 	}
-
 	return len(stack)
 }

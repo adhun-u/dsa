@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-	out := stack.CarFleet(12, []int{10, 8, 0, 5, 3}, []int{2, 4, 1, 1, 3})
+	out := stack.CarFleet(10, []int{6, 8}, []int{3, 2})
 	fmt.Println("Out : ", out)
 }
