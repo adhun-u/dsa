@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-	out := stack.CarFleet(10, []int{6, 8}, []int{3, 2})
+	out := stack.LargestRectangleArea([]int{7, 1, 7})
 	fmt.Println("Out : ", out)
 }
