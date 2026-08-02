@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-	out := sorting.InsertSort([]int{9, 4, 5, 9, 6, 0, 7, 0})
+	out := sorting.CountingSort([]int{9, 4, 5, 9, 6, 0, 7, 0})
 	fmt.Println("Out : ", out)
 }

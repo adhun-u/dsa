@@ -1,6 +1,6 @@
 package sorting
 
-func InsertSort(nums []int) []int {
+func InsertionSort(nums []int) []int {
 
 	for i := 1; i < len(nums); i++ {
 		tmp := nums[i]
