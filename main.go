@@ -1,11 +1,11 @@
 package main
 
 import (
-	"dsa/stack"
+	"dsa/sorting"
 	"fmt"
 )
 
 func main() {
-	out := stack.LargestRectangleArea([]int{7, 1, 7})
+	out := sorting.InsertSort([]int{9, 4, 5, 9, 6, 0, 7, 0})
 	fmt.Println("Out : ", out)
 }
