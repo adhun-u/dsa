@@ -3,4 +3,5 @@ Quick sort
 Insertion sort
 Counting sort
 Merge sort
+Bubble sort
 Tim sort
